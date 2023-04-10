@@ -1028,7 +1028,7 @@
   resolved "https://registry.yarnpkg.com/@babel/regjsgen/-/regjsgen-0.8.0.tgz#f0ba69b075e1f05fb2825b7fad991e7adbb18310"
   integrity sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.20.0", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.5", "@babel/runtime@^7.20.0", "@babel/runtime@^7.8.4":
   version "7.21.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.21.0.tgz#5b55c9d394e5fcf304909a8b00c07dc217b56673"
   integrity sha512-xwII0//EObnq89Ji5AKYQaRYiW/nZ3llSv29d49IuxPhKbtJoLP+9QUUZ4nVragQVtaVGeZrpB+ZtG/Pdy/POw==
@@ -1394,6 +1394,11 @@
   integrity sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==
   dependencies:
     "@hapi/hoek" "^9.0.0"
+
+"@iabtcf/core@^1.5.3":
+  version "1.5.6"
+  resolved "https://registry.yarnpkg.com/@iabtcf/core/-/core-1.5.6.tgz#92568d89252fbf205aa65836703cb0a52e812382"
+  integrity sha512-u2q9thI9vLurYZdGtyJsDYOqoeLc4EgQsYGSc+UVibYII61B/ENJPZS6eFlML1F0hSoTR/goptpo5nGRDkKd2w==
 
 "@jest/create-cache-key-function@^29.2.1":
   version "29.5.0"
@@ -2889,6 +2894,11 @@ deprecated-react-native-prop-types@^3.0.1:
     invariant "*"
     prop-types "*"
 
+dequal@^2.0.2:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/dequal/-/dequal-2.0.3.tgz#2644214f1997d39ed0ee0ece72335490a7ac67be"
+  integrity sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==
+
 destroy@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.2.0.tgz#4803735509ad8be552934c67df614f94e66fa015"
@@ -3062,6 +3072,39 @@ expo-constants@~14.2.0, expo-constants@~14.2.1:
     "@expo/config" "~8.0.0"
     uuid "^3.3.2"
 
+expo-dev-client@~2.1.6:
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/expo-dev-client/-/expo-dev-client-2.1.6.tgz#b5f614dfcdd2793afda3d57e7fcadc7507ab8158"
+  integrity sha512-6XJS+giOUBA1onRFsT4rtaTkG96cw0tBrnn8LEW5lAM96mN/bl1IZsmyUmLgKfpE40lqvc9ZuYN3Uv2EwTGS/Q==
+  dependencies:
+    expo-dev-launcher "2.1.6"
+    expo-dev-menu "2.1.4"
+    expo-dev-menu-interface "1.1.1"
+    expo-manifests "~0.5.0"
+    expo-updates-interface "~0.9.0"
+
+expo-dev-launcher@2.1.6:
+  version "2.1.6"
+  resolved "https://registry.yarnpkg.com/expo-dev-launcher/-/expo-dev-launcher-2.1.6.tgz#4be192cfae397b2024947a437c5b65d154270c1b"
+  integrity sha512-fk2Vb7sJgk++CFfwxuL5A8yZXUghqTOZy0fXqpYBJlskSq2sQr8LPoOrqxEQhnA06/CEzS2OC6FTFo+aY9UkBQ==
+  dependencies:
+    expo-dev-menu "2.1.4"
+    resolve-from "^5.0.0"
+    semver "^7.3.5"
+
+expo-dev-menu-interface@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/expo-dev-menu-interface/-/expo-dev-menu-interface-1.1.1.tgz#8a0d979f62d9a192696f66a77f75d8fab79e604b"
+  integrity sha512-doT+7WrSBnxCcTGZw9QIEZoL+43U4RywbG8XZwbhkcsFWGsh9scp0y/bv3ieFHxRtIdImxbxOoYh7fy1O6g28w==
+
+expo-dev-menu@2.1.4:
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/expo-dev-menu/-/expo-dev-menu-2.1.4.tgz#8bf8ae605d75199a72b603d7ac246e853b8404ca"
+  integrity sha512-T9YPrfo3M+tf4kH61wp36QI2XU2FxeG7EMYg1bcF4BjYx4fUs6i/QvxJ32o5eB+96fXraG2bhiv0Q2QlYWU8Tg==
+  dependencies:
+    expo-dev-menu-interface "1.1.1"
+    semver "^7.3.5"
+
 expo-file-system@~15.2.0, expo-file-system@~15.2.2:
   version "15.2.2"
   resolved "https://registry.yarnpkg.com/expo-file-system/-/expo-file-system-15.2.2.tgz#a1ddf8aabf794f93888a146c4f5187e2004683a3"
@@ -3076,10 +3119,22 @@ expo-font@~11.1.1:
   dependencies:
     fontfaceobserver "^2.1.0"
 
+expo-json-utils@~0.5.0:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/expo-json-utils/-/expo-json-utils-0.5.1.tgz#fcb01050b8aa66592eea2024a48979f2d090c6f9"
+  integrity sha512-Y5boshyf40vPjwxNnOIfacZPNkOymecZRQ1k+TSXlq6gnw5XRsnM5hnP0VLVYhdv8x+9CX6E1fDsDUNvsK38Dg==
+
 expo-keep-awake@~12.0.1:
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-12.0.1.tgz#19c5ab55391394ded3f6c262b0707c7140658a11"
   integrity sha512-hqeCnb4033TyuZaXs93zTK7rjVJ3bywXATyMmKmKkLEsH2PKBAl/VmjlCOPQL/2Ncqz6aj7Wo//tjeJTARBD4g==
+
+expo-manifests@~0.5.0:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/expo-manifests/-/expo-manifests-0.5.2.tgz#60f91ad196cd5a37248c28c6f307df806c5a27ad"
+  integrity sha512-WnsTlE2le3pV/B/AJPKTOSjb2K9AT1mPDCfQxTQ/KMCwF95saoXYt2OPF3hxZNaMAV6VIAhXgd5Y6wpcH9ruPQ==
+  dependencies:
+    expo-json-utils "~0.5.0"
 
 expo-modules-autolinking@1.1.2:
   version "1.1.2"
@@ -3104,6 +3159,11 @@ expo-status-bar@~1.4.4:
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/expo-status-bar/-/expo-status-bar-1.4.4.tgz#6874ccfda5a270d66f123a9f220735a76692d114"
   integrity sha512-5DV0hIEWgatSC3UgQuAZBoQeaS9CqeWRZ3vzBR9R/+IUD87Adbi4FGhU10nymRqFXOizGsureButGZIXPs7zEA==
+
+expo-updates-interface@~0.9.0:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/expo-updates-interface/-/expo-updates-interface-0.9.1.tgz#e81308d551ed5a4c35c8770ac61434f6ca749610"
+  integrity sha512-wk88LLhseQ7LJvxdN7BTKiryyqALxnrvr+lyHK3/prg76Yy0EGi2Q/oE/rtFyyZ1JmQDRbO/5pdX0EE6QqVQXQ==
 
 expo@~48.0.10:
   version "48.0.10"
@@ -5398,6 +5458,14 @@ react-native-codegen@^0.71.5:
     jscodeshift "^0.13.1"
     nullthrows "^1.1.1"
 
+react-native-google-mobile-ads@^10.1.1:
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-google-mobile-ads/-/react-native-google-mobile-ads-10.1.1.tgz#fc3b8a8f32c1f770975fd370747bc97f51e70367"
+  integrity sha512-Ndok1SgN6uP6nH/1u01jd/5+2xPV6mQECEiFiOWvk08n+yYyQFo6O5UZ3VLRpaSTrpXDilyClW/wXvLMVosMYA==
+  dependencies:
+    "@iabtcf/core" "^1.5.3"
+    use-deep-compare-effect "^1.8.1"
+
 react-native-gradle-plugin@^0.71.17:
   version "0.71.17"
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.71.17.tgz#cf780a27270f0a32dca8184eff91555d7627dd00"
@@ -6519,6 +6587,14 @@ url-parse@^1.5.9:
   dependencies:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
+
+use-deep-compare-effect@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/use-deep-compare-effect/-/use-deep-compare-effect-1.8.1.tgz#ef0ce3b3271edb801da1ec23bf0754ef4189d0c6"
+  integrity sha512-kbeNVZ9Zkc0RFGpfMN3MNfaKNvcLNyxOAAd9O4CBZ+kCBXXscn9s/4I+8ytUER4RDpEYs5+O6Rs4PqiZ+rHr5Q==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    dequal "^2.0.2"
 
 use-sync-external-store@^1.0.0:
   version "1.2.0"
